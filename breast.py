@@ -1,5 +1,11 @@
 import streamlit as st
-import tensorflow as tf
+
+try:
+    import tensorflow as tf
+except ModuleNotFoundError:
+    st.error("TensorFlow is not installed. Please check `requirements.txt` and redeploy the app.")
+    st.stop()
+
 import numpy as np
 import cv2
 from PIL import Image
