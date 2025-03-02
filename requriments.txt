@@ -1,6 +1,7 @@
 streamlit
-tensorflow
+tensorflow==25.0.1
 numpy
 opencv-python
 pillow
 keras
+python-3.10
